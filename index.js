@@ -1,10 +1,30 @@
 const express = require('express')
 const app = express()
+const path = require('path')
 
 
-app.get('/test',(req, res) => {
-   res.send({ name:'test here now!!'})
+
+app.set('view engine','ejs')
+app.set('views', path.join(__dirname, 'views'))
+
+//this is for use in the css!!!
+app.use(express.static(path.join(__dirname, 'public')))
+
+
+
+app.get('/',(req, res) => {
+   res.render('main', {
+
+   })
 })
+
+
+app.get('composto', (req,res) => {
+    res.render()
+})
+
+
+
 
 
 
