@@ -5,3 +5,7 @@ body{
     background-repeat: no-repeat;
     width: 100vh;
 }
+
+input{
+    padding: 10px;
+}
