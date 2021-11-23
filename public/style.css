@@ -1,3 +1,7 @@
 body{
     background-color: aquamarine;
+    background-image: url(./juros-embutidos.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vh;
 }
