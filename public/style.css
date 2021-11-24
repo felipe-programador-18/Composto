@@ -3,17 +3,27 @@ body{
     background-image: url(./juros-embutidos.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100vh;
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+    text-align: center;
+    font-size: 25px;
 }
 
 input{
-    padding: 10px;
-    margin: 20px;
-    margin-left: 120px;
-    margin-right: 80px;
-    display:inline-block;
+
+     margin: 20px;
+     padding: 10px;
+     margin-right:auto;
+     margin-left: auto;
+     display:block;
+ 
 }
 button{
-    display: inline-block;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
 
 }
+
+
