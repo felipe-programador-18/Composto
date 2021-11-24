@@ -8,4 +8,12 @@ body{
 
 input{
     padding: 10px;
+    margin: 20px;
+    margin-left: 120px;
+    margin-right: 80px;
+    display:inline-block;
+}
+button{
+    display: inline-block;
+
 }
