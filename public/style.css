@@ -7,31 +7,51 @@ body{
     padding: 0%;
     margin: 0%;
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 input{ 
-     margin: 40px;
+     margin:40px;
      padding: 10px;
      margin-right:auto;
      margin-left: auto;
      display:block;
- 
+     box-sizing: border-box;
 }
 button{
     display:block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
 
 }
 
 .juros{
     background-color:rgba(219, 219, 219, 0.7);
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 300px;
+    margin: auto;
+    /*width: 300px;
     height: 340px;
+    */
+    padding: 10px;
+    max-width: 300px;
+    margin-top: 15px;
+}
 
+.one{
+ padding-bottom: 10px;
+ background-color: rgb(178, 200, 200, 0.6);
+}
+.two{
+    background-color: rgb(178, 200, 200, 0.6);
+}
+
+.three{
+    background-color:rgb(178, 200, 200, 0.6);
+    font-weight: bold;
+}
+
+.four{
+    background-color: rgb(178, 200, 200, 0.6);
+    font-weight: bold;
+   
 }
 
