@@ -19,8 +19,10 @@ app.get('/',(req, res) => {
 })
 
 
-app.get('composto', (req,res) => {
-    res.render()
+app.get('/composto', (req,res) => {
+    res.render('composto', {
+
+    })
 })
 
 
