@@ -20,6 +20,13 @@ app.get('/',(req, res) => {
 
 
 app.get('/composto', (req,res) => {
+    
+    if(C && i && T){
+        
+    }
+    const { C, i, T} = req.query
+    
+    
     res.render('composto', {
 
     })
