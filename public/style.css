@@ -39,9 +39,11 @@ button{
 .one{
  padding-bottom: 10px;
  background-color: rgb(178, 200, 200, 0.6);
+ font-weight: bold;
 }
 .two{
     background-color: rgb(178, 200, 200, 0.6);
+    font-weight: bold;
 }
 
 .three{
