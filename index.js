@@ -24,20 +24,19 @@ app.get('/composto', (req,res) => {
     const {C, i, T} = req.query
     if(C && i && T){
         const teste = CalcJuros.CalcJuros(C,i,T)
+        res.render('composto', {
+            error: false,
+            C : CalcJuros.Convert(C),
+            i: CalcJuros.Convert(i),
+            T: CalcJuros.Convert(T),
+            teste: CalcJuros.Convert(teste)
+        })
+    }else {
+        res.render('composto', {
+        error: 'Valores inválidos, preencha Todos os Campos!!!'
+        })
     }
-    res.render('composto', {
-        error: false,
-        C : CalcJuros.Convert(C),
-        i: CalcJuros.Convert(i),
-        T: CalcJuros.Convert(T),
-        teste: CalcJuros.Convert(teste)
-    })
-    
-
-
-    res.render('composto', {
-
-    })
+  
 })
 
 
