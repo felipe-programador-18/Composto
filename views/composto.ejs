@@ -11,5 +11,17 @@
 
    </div>
 
+   <div class="resultado">
+      <% if(error) {%>
+         <%= error %>
+      <% } else{ %>
+        Resultado é: <%= teste %> 
+      <% } %>
+
+
+   </div>
+
+
+
 
 <%- include('footer') %>
