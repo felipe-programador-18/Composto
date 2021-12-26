@@ -21,12 +21,20 @@ app.get('/',(req, res) => {
 
 app.get('/composto', (req,res) => {
     
+    const {C, i, T} = req.query
     if(C && i && T){
         const teste = CalcJuros.CalcJuros(C,i,T)
     }
-    const { C, i, T} = req.query
+    res.render('composto', {
+        error: false,
+        C : CalcJuros.Convert(C),
+        i: CalcJuros.Convert(i),
+        T: CalcJuros.Convert(T),
+        teste: CalcJuros.Convert(teste)
+    })
     
-    
+
+
     res.render('composto', {
 
     })
