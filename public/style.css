@@ -64,5 +64,6 @@ button{
 
 .botaofinal{
     background-color: rgba(255, 218, 10, 0.548);
-    font-family: sans-serif;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
 }
