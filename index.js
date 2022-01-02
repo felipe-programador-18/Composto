@@ -1,5 +1,8 @@
 const express = require('express')
 const app = express()
+const compost = require('./lib/composto')
+
+//The command path serve to caught html and css
 const path = require('path')
 
 
