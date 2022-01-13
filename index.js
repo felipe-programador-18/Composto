@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const compost = require('./lib/composto')
+const composto = require('./lib/composto')
 
 //The command path serve to caught html and css
 const path = require('path')
@@ -23,16 +23,17 @@ app.get('/',(req, res) => {
 
 
 app.get('/composto', (req,res) => {
-    
-    const {C, i, T} = req.query
-    if(C && i && T){
-        const teste = CalcJuros.CalcJuros(C,i,T)
+    // desctructment assiment
+    const {C, i, t} = req.query
+
+    if(C && i && t){
+        const teste = CalcJuros.CalcJuros(C,i,t)
         res.render('composto', {
             error: false,
-            C : CalcJuros.Convert(C),
-            i: CalcJuros.Convert(i),
-            T: CalcJuros.Convert(T),
-            teste: CalcJuros.Convert(teste)
+            C : composto.Convert(C),
+            i: composto.Convert(i),
+            t: composto.Convert(t),
+            teste: composto.Convert(teste)
         })
     }else {
         res.render('composto', {
