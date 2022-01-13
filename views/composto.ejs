@@ -2,20 +2,20 @@
 
 <form method="get" action="composto">
      <div class="juros">
-    <input name="one" type="number" placeholder="Valor Inicial">
-    <input name="two" type="text" placeholder="Valor Mensal">
-    <input name="three" type="text" placeholder="Taxa de Juros">
-    <input name="four" type="text" placeholder="Período em :">
+      <input class="one" name="capital" type="number" placeholder="Capital Inicial">
+      <input class="two" name="I" type="text" placeholder="Taxa de Juros">
+      <input class="four" name="tempo" type="text" placeholder="Período em">
     <button class="botaofinal">clique aqui</button>
-   </form>
-
-   </div>
+     </div>
+</form>
 
    <div class="resultado">
-      <% if(error) {%>
+      <% if(error){%>
          <%= error %>
       <% } else{ %>
-        Resultado é: <%= teste %> 
+        Juros de: <%= C%> , com capital de <%= i %> , com 
+        Tempo de <%= t %> .
+       A taxa de juros simples é : <%= teste %>  
       <% } %>
 
 
