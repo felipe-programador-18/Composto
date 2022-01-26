@@ -13,7 +13,10 @@ app.set('views', path.join(__dirname, 'views'))
 app.use(express.static(path.join(__dirname, 'public')))
 
 const Indexrouter = require('./router/index')
-app.use('./', Indexrouter)
+const Clientrouter = require('./router/client')
+
+app.use('/', Indexrouter)
+app.use('/gordura', Clientrouter)
 
 //create a middlware
 app.use((res, req, next) =>{
