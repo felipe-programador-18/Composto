@@ -2,6 +2,7 @@ const express = require('express')
 const app = express()
 //const composto = require('./lib/composto')
 
+
 //The command path serve to caught html and css
 const path = require('path')
 
@@ -13,6 +14,12 @@ app.use(express.static(path.join(__dirname, 'public')))
 
 const Indexrouter = require('./router/index')
 app.use('./', Indexrouter)
+
+//create a middlware
+app.use((res, req, next) =>{
+    console.log('passou por aqui')
+    next()
+})
 
 
 // another way for listin of door!!
