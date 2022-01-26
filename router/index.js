@@ -29,4 +29,4 @@ router.get('/',(req, res) => {
   
 }) 
 
-module.express= Router
+module.express= router
