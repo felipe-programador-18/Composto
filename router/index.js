@@ -1,14 +1,14 @@
 //reorrange this code in file with router
 const express = require('express')
-const Router = express.Router()
-const composto = require('./lib/composto')
+const router = express.Router()
+const composto = require('../lib/composto')
 
-Router.get('/',(req, res) => {
+router.get('/',(req, res) => {
     res.render('main', {
     })
  })
 
- Router.get('/composto', (req,res) => {
+ router.get('/composto', (req,res) => {
     // desctructment assiment
     const {C, i, t} = req.query
 
