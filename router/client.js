@@ -2,7 +2,7 @@ const express = require('express')
 const router = express.Router()
 const composto = require('../lib/composto')
 
-router.get('/composto', (req,res) => {
+router.get('/', (req,res) => {
     // desctructment assiment
     const {C, i, t} = req.query
 
