@@ -8,4 +8,4 @@ router.get('/',(req, res) => {
  })
 
 
-module.express= router
+module.exports= router
