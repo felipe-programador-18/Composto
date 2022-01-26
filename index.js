@@ -16,7 +16,7 @@ const Indexrouter = require('./router/index')
 const Clientrouter = require('./router/client')
 
 app.use('/', Indexrouter)
-app.use('/gordura', Clientrouter)
+app.use('/composto', Clientrouter)
 
 //create a middlware
 app.use((res, req, next) =>{
