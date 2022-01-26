@@ -3,9 +3,7 @@ const router = express.Router()
 const composto = require('../lib/composto')
 
 router.get('/', (req,res) => {
-    // desctructment assiment
     const {C, i, t} = req.query
-
     if(C && i && t){
         const teste = CalcJuros.CalcJuros(C,i,t)
         res.render('composto', {
