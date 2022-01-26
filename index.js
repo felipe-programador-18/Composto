@@ -1,8 +1,5 @@
 const express = require('express')
 const app = express()
-//const composto = require('./lib/composto')
-
-
 //The command path serve to caught html and css
 const path = require('path')
 
@@ -23,7 +20,6 @@ app.use((res, req, next) =>{
     console.log('passou por aqui')
     next()
 })
-
 
 // another way for listin of door!!
 const port = process.env.PORT || 3000
