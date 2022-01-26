@@ -2,7 +2,7 @@ const express = require('express')
 const router = express.Router()
 const composto = require('../lib/composto')
 
-router.get('/', (req,res) => {
+router.get('/composto', (req,res) => {
     const {C, i, t} = req.query
     if(C && i && t){
         const teste = CalcJuros.CalcJuros(C,i,t)
