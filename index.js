@@ -3,6 +3,7 @@ const app = express()
 //The command path serve to caught html and css
 const path = require('path')
 
+
 app.set('view engine','ejs')
 app.set('views', path.join(__dirname, 'views'))
 
