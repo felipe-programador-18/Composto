@@ -5,7 +5,7 @@ const composto = require('../lib/composto')
 router.get('/composto', (req,res) => {
     const {C, i, t} = req.query
     if(C && i && t){
-        const teste = CalcJuros.CalcJuros(C,i,t)
+        const teste = composto.CalJuros(C,i,t)
         res.render('composto', {
             error: false,
             C : composto.Convert(C),
