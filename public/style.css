@@ -63,7 +63,15 @@ button{
 }
 
 .botaofinal{
-    background-color: rgba(255, 218, 10, 0.548);
+    background-color: rgba(34, 225, 198, 0.6);
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: medium;
+}
+
+.resultado{
+    width:200px ;
+    height: 200px;
+    background-color:rgba(34, 223, 198, 0.6) ;
+    margin: auto;
+    color:white;
 }
