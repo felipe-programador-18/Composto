@@ -7,5 +7,10 @@ router.get('/',(req, res) => {
     })
  })
 
+router.use((res, req, next) =>{
+    console.log('test inside out')
+    next()
+})
+
 
 module.exports= router
